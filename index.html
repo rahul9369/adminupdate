@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Create Poll</h1>
+
+    <form id="pollForm">
+      <a href="user.html">User</a>
+      <input
+        type="text"
+        id="pollQuestion"
+        placeholder="Enter poll question"
+        required />
+      <input type="text" id="pollOption1" placeholder="Option 1" required />
+      <input type="text" id="pollOption2" placeholder="Option 2" required />
+      <button type="submit">Create Poll</button>
+    </form>
+    <script src="admin.js"></script>
+  </body>
+</html>
