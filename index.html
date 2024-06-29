@@ -3,23 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Page</title>
+    <title>Admin Poll</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Create Poll</h1>
-
-    <form id="pollForm">
-      <a href="user.html">User</a>
-      <input
-        type="text"
-        id="pollQuestion"
-        placeholder="Enter poll question"
-        required />
-      <input type="text" id="pollOption1" placeholder="Option 1" required />
-      <input type="text" id="pollOption2" placeholder="Option 2" required />
-      <button type="submit">Create Poll</button>
-    </form>
+    <h1>Admin Poll</h1>
+    <div class="admin-container">
+      <h2>Add New Question</h2>
+      <form id="questionForm">
+        <input
+          type="text"
+          id="questionInput"
+          placeholder="Enter your question"
+          required />
+        <input
+          type="text"
+          class="optionInput"
+          placeholder="Option 1"
+          required />
+        <input
+          type="text"
+          class="optionInput"
+          placeholder="Option 2"
+          required />
+        <input
+          type="text"
+          class="optionInput"
+          placeholder="Option 3"
+          required />
+        <input
+          type="text"
+          class="optionInput"
+          placeholder="Option 4"
+          required />
+        <input
+          type="number"
+          id="correctOption"
+          placeholder="Correct option (1-4)"
+          min="1"
+          max="4"
+          required />
+        <button type="submit">Add Question</button>
+      </form>
+      <h2>Questions</h2>
+      <ul id="questionList"></ul>
+    </div>
     <script src="admin.js"></script>
   </body>
 </html>
